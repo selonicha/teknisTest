@@ -16,28 +16,28 @@ class RegisterController extends Controller
     public function saveRegister(Request $request)
     {
         $request->validate([
-            'email'=> 'required',
-            'password'=>'required',
-            'name'=>'required'
+            'email' => 'required',
+            'password' => 'required',
+            'name' => 'required'
         ]);
 
-        $buatAkun=[
-            'email'=>$request->email,
-            'name'=>$request->name,
-            'password'=>Hash::make($request->password),
+        $buatAkun = [
+            'email' => $request->email,
+            'name' => $request->name,
+            'password' => Hash::make($request->password),
         ];
 
         User::create($buatAkun);
 
-        $cekAkun=[
-            'email'=>$request->email,
-            'password'=>$request->password,
-            'name'=>$request->name,
+        $cekAkun = [
+            'email' => $request->email,
+            'password' => $request->password,
+            'name' => $request->name,
         ];
 
 
 
-        if(Auth::attempt($cekAkun)){
+        if (Auth::attempt($cekAkun)) {
             return 'sukses';
         } else {
             return 'gagal';

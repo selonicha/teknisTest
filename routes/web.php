@@ -17,4 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/login', [LoginController::class, 'tampilanLogin']);
 Route::get('/register', [RegisterController::class, 'tampilanRegister']);
-Route::post('/auth/register', [RegisterController::class, 'save']);
+Route::post('authRegister', [RegisterController::class, 'saveRegister']);
+Route::get('welcome', [WelcomeController::class, 'tampilanWelcome']);
+Route::post('authLogin', [LoginController::class, 'processLogin']);

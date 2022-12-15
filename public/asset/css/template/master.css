@@ -1,0 +1,33 @@
+ *, html{
+    padding: 0px;
+    margin: 0px;
+
+ }
+
+ .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .header ul {
+     display: flex;
+     gap: 10px;
+ }
+
+ .icon {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: #f0c51d;
+ }
+
+ .header ul li{
+    text-decoration: none;
+ }
