@@ -38,7 +38,7 @@ class RegisterController extends Controller
 
 
         if (Auth::attempt($cekAkun)) {
-            return 'sukses';
+            return view("welcome");
         } else {
             return 'gagal';
         }

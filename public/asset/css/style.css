@@ -37,13 +37,3 @@ body{
     align-items: center;
 }
 
-.card{
-    display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        padding: 40px 80px;
-        box-shadow: -8px -8px 45px rgba(0, 0, 0, 0.1), 8px 8px 45px rgba(255, 255, 255, 1);
-        border-radius: 8px;
-        background-color: #ffffff;
-}

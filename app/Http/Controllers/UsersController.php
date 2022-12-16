@@ -9,12 +9,15 @@ class UsersController extends Controller
 {
     public function tampilanUsers()
     {
-        return view("users");
+        $users = User::all();
+        return view("users", compact(
+            'users'
+        ));
     }
 
     public function showUsersList()
     {
         $users = User::all();
-        return view("users")
+        return view("users");
     }
 }

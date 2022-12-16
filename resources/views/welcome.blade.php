@@ -5,6 +5,3 @@
 @endsection
 
 
-<div class="listUsers">
-
-</div>

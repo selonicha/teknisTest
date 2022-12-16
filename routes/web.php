@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\USersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,4 @@ Route::get('/register', [RegisterController::class, 'tampilanRegister']);
 Route::post('authRegister', [RegisterController::class, 'saveRegister']);
 Route::get('welcome', [WelcomeController::class, 'tampilanWelcome']);
 Route::post('authLogin', [LoginController::class, 'processLogin']);
+Route::get('users', [UsersController::class, 'tampilanUsers']);
